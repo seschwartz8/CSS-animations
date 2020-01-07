@@ -1,0 +1,94 @@
+.container {
+  margin: auto;
+  height: 50%;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loading {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: solid 2px black;
+  border-radius: 50px;
+}
+
+#red {
+  animation: rainbowRed 4s linear infinite;
+}
+
+#orange {
+  animation: rainbowOrange 4s linear infinite;
+}
+
+#yellow {
+  animation: rainbowYellow 4s linear infinite;
+}
+
+#green {
+  animation: rainbowGreen 4s linear infinite;
+}
+
+#blue {
+  animation: rainbowBlue 4s linear infinite;
+}
+
+#purple {
+  animation: rainbowPurple 4s linear infinite;
+}
+
+@keyframes rainbowRed {
+  0% {
+    background-color: white;
+  }
+  14.29%, 90% {
+    background-color: red;
+  }
+}
+
+@keyframes rainbowOrange {
+  0%, 14.29% {
+    background-color: white;
+  }
+  28.57%, 90% {
+    background-color: orange;
+  }
+}
+
+@keyframes rainbowYellow {
+  0%, 28.57% {
+    background-color: white;
+  }
+  42.86%, 90% {
+    background-color: yellow;
+  }
+}
+
+@keyframes rainbowGreen {
+  0%, 42.86% {
+    background-color: white;
+  }
+  57.14%, 90% {
+    background-color: green;
+  }
+}
+
+@keyframes rainbowBlue {
+  0%, 57.14% {
+    background-color: white;
+  }
+  71.43%, 90% {
+    background-color: blue;
+  }
+}
+
+@keyframes rainbowPurple {
+  0%, 71.43% {
+    background-color: white;
+  }
+  90% {
+    background-color: purple;
+  }
+}
