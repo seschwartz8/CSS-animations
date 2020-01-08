@@ -5,7 +5,7 @@ body {
 .flag-container {
   width: 800px;
   height: 400px;
-  margin: auto;
+  margin: 100px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -36,6 +36,23 @@ body {
   height: 100%;
   background-color: blue;
   border-radius: 10px;
+  animation: blueGrow .8s linear 1;
+  animation-delay: 1s;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: white;
+  margin: 20px;
+  animation: fadeIn 2s linear 1;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 .short-container {
@@ -50,6 +67,8 @@ body {
   width: 100%;
   height: 23%;
   border-radius: 10px;
+  animation: stripeGrow 1s linear 1;
+  animation-delay: 1s;
 }
 
 .red {
@@ -64,26 +83,35 @@ body {
   0% {
     transform: translateX(-900px);
   }
-  35% {
-    transform: translateX(-500px);
-  }
-  70% {
-    transform: translateX(0);
-  }
-  85% {
-    transform: translateX(-20px);
-  }
-  90% {
-    transform: translateX(0);
-  }
-  95% {
-    transform: translateX(-10px);
-  }
   100% {
     transform: translateX(0);
   }
-    
-
 }
 
+@keyframes stripeGrow {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blueGrow {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 49%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
