@@ -1,0 +1,89 @@
+body {
+  background-color: beige;
+}
+
+.flag-container {
+  width: 800px;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flag-container {
+  animation: flagSlide 1s linear 1;
+  animation-delay: 1s;
+}
+
+.top-container {
+  height: 48.5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-container {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blue {
+  width: 49%;
+  height: 100%;
+  background-color: blue;
+  border-radius: 10px;
+}
+
+.short-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stripe {
+  width: 100%;
+  height: 23%;
+  border-radius: 10px;
+}
+
+.red {
+  background-color: red;
+}
+
+.white {
+  background-color: white;
+}
+
+@keyframes flagSlide {
+  0% {
+    transform: translateX(-900px);
+  }
+  35% {
+    transform: translateX(-500px);
+  }
+  70% {
+    transform: translateX(0);
+  }
+  85% {
+    transform: translateX(-20px);
+  }
+  90% {
+    transform: translateX(0);
+  }
+  95% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+    
+
+}
+
+
